@@ -27,12 +27,14 @@ public class Practice08SetTextSkewXView extends View {
         paint.setTextSize(60);
 
         // 使用 Paint.setTextSkewX() 来让文字倾斜
+        // 负值向右（看起来右） 正左
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+        paint.setTextSkewX(-1f);
         canvas.drawText(text, 50, 100, paint);
     }
 }
